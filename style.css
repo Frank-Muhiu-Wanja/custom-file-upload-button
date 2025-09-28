@@ -1,0 +1,49 @@
+.video-background {
+  position: fixed;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+h1 {
+  color: #009879;
+}
+.file-upload {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+}
+.file-upload__input {
+  display: none;
+}
+.file-upload__button {
+  -webkit-appearance: none;
+  background: #009879;
+  border: 2px solid #007450;
+  border-radius: 4px;
+  padding: 0.5em 0.8em;
+  outline: none;
+  margin-right: 15px;
+  color: #ffffff;
+  font-size: 1em;
+  font-family: "Quicksand";
+  font-weight: 700;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.file-upload__button:active {
+  background-color: #00745d;
+}
+.file-upload__label {
+  max-width: 250px;
+  font-size: 0.95em;
+  text-overflow: ellipsis; /* When text is too long to fit in its box, it replaces the extra part with ... (ellipsis). */
+  /* It only works if overflow is hidden and the text is forced not to wrap. */
+  overflow: hidden; /* cut off anything past the box.*/
+  white-space: nowrap; /* Prevents the text from wrapping onto a new line. Everything must stay on one line, even if it’s too long. */
+  font-family: "Quicksand";
+  font-weight: 700;
+}

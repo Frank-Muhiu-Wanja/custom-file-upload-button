@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom File Upload Button</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video class="video-background" autoplay loop muted>
+      <source src="large.mp4" type="video/mp4" />
+    </video>
+    <audio loop id="bg-music">
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+    <button id="playBtn">Play Music</button>
+
+    <h1>Custom File Upload Button w/ File List</h1>
+    <div class="file-upload">
+      <input
+        class="file-upload__input"
+        type="file"
+        name="myFile[]"
+        id="myFile"
+        multiple
+      />
+      <button type="button" class="file-upload__button">Choose File(s)</button>
+      <span class="file-upload__label"> </span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
